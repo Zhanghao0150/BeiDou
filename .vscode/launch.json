@@ -1,0 +1,65 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "yarn run dev",
+            "request": "launch",
+            "runtimeArgs": [
+                "run",
+                "dev"
+            ],
+            "cwd": "${workspaceFolder}/gms-ui",
+            "runtimeExecutable": "yarn",
+            "type": "node"
+        },
+        {
+            "name": "yarn install",
+            "request": "launch",
+            "runtimeArgs": [
+                "install"
+            ],
+            "cwd": "${workspaceFolder}/gms-ui",
+            "runtimeExecutable": "yarn",
+            "type": "node"
+        },
+        {
+            "name": "pnpm run dev",
+            "request": "launch",
+            "runtimeArgs": [
+                "dev"
+            ],
+            "cwd": "${workspaceFolder}/gms-ui",
+            "runtimeExecutable": "pnpm",
+            "type": "node"
+        },
+        {
+            "name": "pnpm install",
+            "request": "launch",
+            "runtimeArgs": [
+                "install"
+            ],
+            "cwd": "${workspaceFolder}/gms-ui",
+            "runtimeExecutable": "pnpm",
+            "type": "node"
+        },
+        {
+            "type": "java",
+            "name": "ServerApplication",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/gms-server",
+            "mainClass": "org.gms.ServerApplication",
+            "vmArgs": "-Dfile.encoding=GBK",
+            "projectName": "gms-server"
+        },
+        
+        {
+            "type": "java",
+            "name": "Launch Java Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+    ]
+}

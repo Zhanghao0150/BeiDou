@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serial;
 
 /**
- *  实体类。
+ * 实体类。
  *
  * @author sleep
  * @since 2024-05-24
@@ -88,7 +88,7 @@ public class CharactersDO implements Serializable {
 
     private Integer spawnpoint;
 
-    private Boolean gm;
+    private Integer gm;
 
     private Integer party;
 

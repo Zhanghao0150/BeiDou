@@ -8,7 +8,7 @@ import org.gms.dao.entity.CharactersDO;
 import java.util.List;
 
 /**
- *  映射层。
+ * 映射层。
  *
  * @author sleep
  * @since 2024-05-24
@@ -19,4 +19,7 @@ public interface CharactersMapper extends BaseMapper<CharactersDO> {
 
     @Select("SELECT id, world FROM characters WHERE accountid = #{accountId}")
     List<CharactersDO> selectIdAndWorldListByAccountId(int accountId);
+
+    @Select("SELECT id, name, level, job, map as mapid, gm FROM characters")
+    List<CharactersDO> selectCharactersList();
 }
